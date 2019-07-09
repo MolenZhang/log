@@ -1,7 +1,7 @@
 package main
 
 import (
-	zaplog "log/zapLog"
+	zaplog "github.com/MolenZhang/log/zapLog"
 
 	"go.uber.org/zap/zapcore"
 )

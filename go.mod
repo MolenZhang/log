@@ -1,4 +1,4 @@
-module log
+module github.com/MolenZhang/log
 
 go 1.12
 

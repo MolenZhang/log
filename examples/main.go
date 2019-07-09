@@ -1,13 +1,13 @@
 package main
 
 import (
-	zaplog "github.com/MolenZhang/log/zapLog/zapLog"
+	"github.com/MolenZhang/log"
 	"go.uber.org/zap/zapcore"
 )
 
 func main() {
 	// debug mode
-	debug := zaplog.Config{
+	debug := log.Config{
 		Level:              zapcore.DebugLevel, // 日志级别 debug级别下会打印所有类型日志
 		EncodeLogsAsJSON:   false,              // 输出日志格式是为json格式
 		FileLoggingEnabled: false,              // 输出日志是否保存到文件
@@ -23,5 +23,5 @@ func main() {
 
 	debug.Init()
 
-	zaplog.Debug("[TestDebugMode] HelloWorld!")
+	log.Debug("[TestDebugMode] HelloWorld!")
 }

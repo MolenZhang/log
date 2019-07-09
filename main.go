@@ -1,8 +1,7 @@
 package main
 
 import (
-	zaplog "github.com/MolenZhang/log/zapLog"
-
+	zaplog "github.com/MolenZhang/log/zapLog/zapLog"
 	"go.uber.org/zap/zapcore"
 )
 
@@ -17,7 +16,7 @@ func main() {
 		MaxBackups:         3,                  // 最大保留备份数
 		MaxAge:             7,                  // 保存的天数
 		IsAddCaller:        true,               // 是否开启调用追踪
-		CallerSkip:         1,                  //
+		CallerSkip:         1,
 		Directory:          "./out/",
 		Filename:           "core.log",
 	}

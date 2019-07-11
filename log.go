@@ -20,9 +20,9 @@ type Config struct {
 	MaxSize            int           `yaml:"maxSize"`    // MB
 	MaxBackups         int           `yaml:"maxBackups"` // Days
 	MaxAge             int           `yaml:"maxAge"`
-	IsAddCaller        bool          `yaml:"isAddCaller "`
+	IsAddCaller        bool          `yaml:"isAddCaller"`
 	CallerSkip         int           `yaml:"callerSkip"`
-	//IsLocalTime        bool
+	IsLocalTime        bool          `yaml:"isLocalTime"`
 }
 
 var defaultCfg = Config{
